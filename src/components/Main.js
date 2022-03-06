@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'
 import Imagen from '../img/ninos.png'
+import Card from './Card'
 
 const Main = () => {
   return (
@@ -19,7 +20,7 @@ const Main = () => {
         </div>   
      </div>
      <div className="container">
-     
+        <Card/>     
      </div>
     
     </>
