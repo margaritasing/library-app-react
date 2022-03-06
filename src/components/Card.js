@@ -8,17 +8,21 @@ const Card = ({book}) => {
     <>
     {
         book.map((item)=> {
-            return(
-                <>
-                <div className="card">
-                    <img  src={Imagen1} alt=".."/>
-                    <div className="bottom">
-                        <h3 className="title">Java</h3>  
-                        <p className="amount">&#8377;3290</p>      
-                    </div>    
-                </div>
-                </>
-            )
+            let thumbnail=item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.smallThumbnail;
+            let amount = item.saleInfo.listPrice && item.saleInfo.listPrice.amount;
+            if (thumbnail != undefined && amount !=undefined) {
+                return(
+                    <>
+                    <div className="card">
+                        <img  src={thumbnail} alt=".."/>
+                        <div className="bottom">
+                            <h3 className="title">{item.volumeInfo.title}</h3>  
+                            <p className="amount">&#8377;{amount}</p>      
+                        </div>    
+                    </div>
+                    </>
+                )                
+            }
         })
     }
     </>
