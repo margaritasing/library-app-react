@@ -8,11 +8,11 @@ import axios from 'axios'
 const Main = () => {
     const [search, setSearch]= useState("");
     const [bookData, setData] = useState([]);
-    const clave = "AIzaSyDFJhxpPnO62QwRJFl9-IyKw7M3mm4d1Wg";
+    
     const searchBook =(evt)=>{
         if(evt.key==="Enter")
         {
-            axios.get('https://www.googleapis.com/books/v1/volumes?q='+search+'&key=AIzaSyDFJhxpPnO62QwRJFl9-IyKw7M3mm4d1Wg'+'&maxResults=40')
+            axios.get('https://www.googleapis.com/books/v1/volumes?q='+search+'&key=aquivalakeydegoogle'+'&maxResults=40')
             .then(res=> setData(res.data.items))
             .catch(err=>console.log(err))
         }
