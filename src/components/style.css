@@ -175,3 +175,132 @@ html{
    }
 
    /* quede en overlay-inner .close */
+   .overlay-inner .close{
+       position: absolute;
+       top: 1rem;
+       right: 1rem;
+       outline: none;
+       border: none;
+       font-size: 17px;
+       background-color: transparent;
+   }
+
+   .overlay-inner .inner-box{
+       margin-top:30px;
+       display: flex;
+       justify-content: center;
+   }
+
+   .overlay-inner .inner-box img{
+       margin-right: 20px;
+       width: 150px;
+       height: 200px;
+   }
+
+   .overlay-inner .inner-box h3{
+       margin-top: 10px;
+       color: green;
+
+   }
+
+   .overlay-inner .inner-box h4{
+       color: blue;
+
+   }
+
+   .overlay-inner .inner-box button{
+       outline: none;
+       border: none;
+       width: 100px;
+       border-radius: 5px;
+       background-color:#24a0ed ;
+       color: white;
+       font-weight: bold;
+       padding: 0.3rem 0.5rem;
+
+   }
+
+   .overlay-inner .description{
+       margin-top: 2rem;
+       text-align: justify;
+       font-size: 13px;
+   }
+
+   /* media querys */
+   @media (max-width: 360px) {
+
+    .row2{
+        top: 10px;
+        left: 10px;
+        display:inline;
+        
+    }
+    
+    .row2 h2{
+       display: none;           
+    }
+    
+    .row2 img{
+        margin-top: 230px;
+        margin-left: 80px;
+        width:150px;
+       }
+    
+    .row1 h1{
+           font-size: 2.5rem;                   
+           margin-left: 10px;
+           
+    }    
+    .search{
+           display: flex;
+           margin-left: 130px;
+           margin-top: 70px;
+           
+    }    
+    .search input{
+           width: 250px;
+          
+    }
+
+    /* Modal */
+  
+ 
+    .overlay-inner .inner-box img{
+        margin-right: 20px;
+        width: 100px;
+        height: 150px;
+        margin-left: 10px;
+    }
+
+    .overlay-inner .inner-box h1{
+        font-size: 20px;  
+ 
+    }
+ 
+    .overlay-inner .inner-box h3{
+        font-size: 15px; 
+    }
+ 
+    .overlay-inner .inner-box h4{
+        font-size: 10px;
+ 
+    }
+ 
+    .overlay-inner .inner-box button{
+       
+
+        
+        padding: 0.3rem 0.5rem;
+ 
+    }
+ 
+    .overlay-inner .description{
+        margin-top: 2rem;
+        text-align: justify;
+        font-size: 13px;
+    }
+      
+    
+  }
+
+ 
